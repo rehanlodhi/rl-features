@@ -1,0 +1,17 @@
+{
+  "name": "rehanlodhi/rest",
+  "description": "Enables REST API for my vue based theme",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "rehanlodhi",
+      "email": "rehanlodhi@live.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Rl\\": "app/"
+    }
+  }
+}
