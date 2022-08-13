@@ -6,11 +6,9 @@
  * Version:           1.0
  * Author:            Rehan Lodhi
  * License:           Rehan Lodhi
- * Domain Path:       /languages
  * Text Domain:       rl
  * Namespace:         Rl
- * GitHub Plugin URI: https://github.com/
- * GitHub Languages:  https://github.com/
+ * GitHub Plugin URI: https://github.com/rehanlodhi/rl-rest-api
  * Requires at least: 5.2
  * Requires PHP:      7.2
  */
