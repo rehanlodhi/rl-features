@@ -1,2 +1,2 @@
 # Rest Api
-## Basic WordPress rest plugin
+## Basic WordPress rest plugin with OOP
