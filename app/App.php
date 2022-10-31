@@ -5,6 +5,7 @@ namespace Rl;
 use Rl\Rest;
 use Rl\PostType\ProjectPostType;
 use Rl\Taxonomy\ProjectCategory;
+use Rl\Taxonomy\ProjectTag;
 
 class App
 {
@@ -156,5 +157,6 @@ class App
     public function taxonomy_hooks()
     {
         add_action('wp_loaded', array(new ProjectCategory(), 'project_category'));
+        add_action('wp_loaded', array(new ProjectTag(), 'project_tag'));
     }
 }

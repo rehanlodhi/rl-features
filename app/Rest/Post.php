@@ -42,7 +42,7 @@ class Post extends \WP_REST_Controller
     public function get_items($request)
     {
         return get_posts(array(
-            'post_type' => 'post'
+            'post_type' => 'project'
         ));
     }
 
