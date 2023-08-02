@@ -1,8 +1,8 @@
 <?php
 
-namespace Rl\Taxonomy;
+namespace Rl\Modules\Taxonomy;
 
-class ProjectCategory
+class ProjectTag
 {
     private $slug;
 
@@ -18,13 +18,13 @@ class ProjectCategory
 
     public function __construct()
     {
-        $this->slug = 'project_cat';
+        $this->slug = 'project_tag';
         $this->post_type = 'project';
-        $this->name = 'Categories';
-        $this->singular_name = 'Category';
+        $this->name = 'Skills';
+        $this->singular_name = 'Skill';
     }
 
-    public function project_category()
+    public function project_tag()
     {
         register_taxonomy($this->slug, $this->post_type, $this->get_args());
     }
@@ -41,7 +41,7 @@ class ProjectCategory
     {
         return $this->args = array(
             'labels'       => $this->get_labels(),
-            'hierarchical' => true,
+            'hierarchical' => false,
             'show_in_rest' => true
         );
     }

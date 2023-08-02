@@ -1,13 +1,13 @@
 <?php
 
-namespace Rl\Rest;
+namespace Rl\Modules\Rest;
 
-class Project
+class Post extends \WP_REST_Controller
 {
     public function __construct()
     {
         $this->namespace = 'rl/v1';
-        $this->rest_base = 'projects';
+        $this->rest_base = 'posts';
     }
 
 
@@ -41,10 +41,9 @@ class Project
 
     public function get_items($request)
     {
-        $data = get_posts(array(
+        return get_posts(array(
             'post_type' => 'project'
         ));
-
-        return $data;
     }
+
 }

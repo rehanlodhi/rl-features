@@ -2,10 +2,10 @@
 
 namespace Rl;
 
+use Rl\Modules\PostType\Project;
+use Rl\Modules\Taxonomy\ProjectCategory;
+use Rl\Modules\Taxonomy\ProjectTag;
 use Rl\Rest;
-use Rl\PostType\ProjectPostType;
-use Rl\Taxonomy\ProjectCategory;
-use Rl\Taxonomy\ProjectTag;
 
 class App
 {
@@ -129,8 +129,8 @@ class App
      */
     public function rest_api() // TODO: Find appropriate name for this function
     {
-        add_action('rest_api_init', array(new Rest\Post(), 'register_routes'));
-        add_action('rest_api_init', array(new Rest\Project(), 'register_routes'));
+        add_action('rest_api_init', array(new Modules\Rest\Post(), 'register_routes'));
+        add_action('rest_api_init', array(new Modules\Rest\Project(), 'register_routes'));
     }
 
     /**
@@ -143,7 +143,7 @@ class App
      */
     public function post_type() // TODO: Find appropriate name for this function
     {
-        add_action('wp_loaded', array(new ProjectPostType(), 'register_post'));
+        add_action('wp_loaded', array(new Project(), 'register_post'));
     }
 
     /**

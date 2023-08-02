@@ -1,8 +1,8 @@
 <?php
 
-namespace Rl\PostType;
+namespace Rl\Modules\PostType;
 
-class ProjectPostType
+class Project
 {
     private $slug;
 

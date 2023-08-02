@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       Rest API
+ * Plugin Name:       Rl Features
  * Plugin URI:        https://rehanlodhi.com
- * Description:       Enables REST API for my vue based theme
+ * Description:       Enables features like projects, project taxonomies and rest
  * Version:           1.0
  * Author:            Rehan Lodhi
  * License:           Rehan Lodhi
  * Text Domain:       rl
  * Namespace:         Rl
- * GitHub Plugin URI: https://github.com/rehanlodhi/rl-rest-api
- * Requires at least: 5.2
- * Requires PHP:      7.2
+ * GitHub Plugin URI: https://github.com/rehanlodhi/rl-reatures
+ * Requires at least: 6.2
+ * Requires PHP:      8.2
  */
 
 include_once plugin_dir_path(__FILE__) . "/vendor/autoload.php";
